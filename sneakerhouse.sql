@@ -8,7 +8,7 @@ CREATE TABLE Usuario (
     Senha VARCHAR(150)
 );
 
--- TRUNCATE TABLE Usuario
+
 
 
 CREATE TABLE Compras (
@@ -56,10 +56,7 @@ CREATE TABLE DadosPessoais (
 
 
 
-SELECT * FROM usuario
 
-
-SELECT * FROM DadosPessoais
 
 
 
