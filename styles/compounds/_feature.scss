@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap');
+
+$component-name : 'products__feature__section';
+
+.#{$component-name}{
+
+    background: $darkness;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+
+    @media (max-width: 1145px) {
+        flex-direction: column-reverse;
+    }
+
+    .img__container__feature{
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        img{
+            width: 300px;
+            margin: 0 auto;
+            @media (max-width: 1145px) {
+                width: 400px;
+            }
+        }
+
+        a{
+            position: absolute;
+            color: $white;
+            border: 1px solid $white;
+            width: 200px;
+            text-align: center;
+            padding: 0.6rem;
+            align-self: flex-end;
+            margin-bottom: 2rem;
+            border-radius: $radius-20-px;
+            font-size: $fs-default;
+            z-index: 1;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 300;
+        }
+
+    }
+
+
+
+
+    .produtos__queima__estoque{
+
+
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $fs-ultra;
+            font-weight: 600;
+            color: $white;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 300;
+
+            
+        span{
+
+            display: inline-block;
+            margin: 0 15px;
+            color: $smoke;
+            opacity: .3;
+
+
+        }
+        
+        }
+
+        #s-queima{
+
+            width: 600px;
+
+
+
+            .swiper-pagination-bullet-active {
+                background-color: white; 
+                
+              }
+    
+       
+              .swiper-pagination-bullet {
+                background-color: grey; 
+              }
+              
+              .swiper-pagination{
+                bottom: -5px;
+              }
+    
+              
+              
+              .swiper-pagination-bullet {
+                width: 8px; 
+                height: 8px;
+                margin: 0 4px;
+              }
+
+              .swiper-wrapper{
+
+                  .swiper-slide{
+
+                    @media (max-width: 768px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+      
+
+                      .tenis__card{
+                  
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          flex-direction: column;
+                          background: $white;
+                          margin: 1rem;
+                          padding: 0;
+                          border-radius: $radius-4-px;
+                          position: relative;
+                          width: 270px;
+                          transition: $transition-fast;
+
+                          @media (max-width: 768px) {
+                            width: 50%;
+                          }
+                  
+                  
+                          &:hover{
+                              transform: scale(1.1);
+                              box-shadow: 1px 1px 35px $smoke;
+                          }
+                          
+                  
+                          .tenis__imagem-template{
+                              padding: 0;
+                              margin: 0;
+                              height: 35vh;
+                              width: 100%;
+                              background: $smoke;
+                  
+                              figure{
+                  
+                                  width: inherit;
+                                  margin: 0 auto;
+                  
+                              }
+                              
+                          }
+                  
+                          .tenis__card__body{
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              justify-content: flex-start;
+                              width: 100%;
+                              padding-left: 1rem;
+                              padding-top: 0.5rem;
+                              
+                  
+                              .tenis__card__avaliation{
+                                  display: flex;
+                                  justify-content: space-between;
+                                  width: inherit;
+                                  padding-right: 1rem;
+                              }
+                          }
+                  
+                          .tenis__card__marca{
+                              
+                              position: absolute;
+                              width: 45px;
+                              height: 45px;
+                              top: 5px;
+                              left: 20px;
+                              
+                          }
+                  
+                  
+                  
+                  
+                      }
+                  }
+              }
+
+        }
+
+    }
+
+
+
+
+
+
+}

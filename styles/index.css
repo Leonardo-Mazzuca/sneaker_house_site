@@ -1,0 +1,2546 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Montserrat:ital,wght@0,400;0,500;1,300&family=Orbitron:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Montserrat:ital,wght@0,400;0,500;1,300&family=Orbitron:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap");
+.text-wind {
+  color: #A0E9FF !important;
+}
+
+.text-fall {
+  color: #ffbf00 !important;
+}
+
+.text-tenisball {
+  color: #D2DE32 !important;
+}
+
+.text-money {
+  color: #1F8A70 !important;
+}
+
+.text-candy {
+  color: #FF597B !important;
+}
+
+.text-pastel {
+  color: #EADBC8 !important;
+}
+
+.text-slime {
+  color: #86A789 !important;
+}
+
+.text-cherry {
+  color: #ED7B7B !important;
+}
+
+.text-midnight {
+  color: #0C356A !important;
+}
+
+.text-autum {
+  color: #F94C10 !important;
+}
+
+.text-downsea {
+  color: #1D5B79 !important;
+}
+
+.text-moss {
+  color: #005B41 !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-strawberry {
+  color: #900C3F !important;
+}
+
+.fill-ocean {
+  fill: #0081C9;
+}
+
+.fill-fall {
+  fill: #ffbf00;
+}
+
+.bg-wind {
+  background-color: #A0E9FF;
+}
+
+.bg-fall {
+  background-color: #ffbf00;
+}
+
+.bg-tenisball {
+  background-color: #D2DE32;
+}
+
+.bg-money {
+  background-color: #1F8A70;
+}
+
+.bg-candy {
+  background-color: #FF597B;
+}
+
+.bg-pastel {
+  background-color: #EADBC8;
+}
+
+.bg-slime {
+  background-color: #86A789;
+}
+
+.bg-cherry {
+  background-color: #ED7B7B;
+}
+
+.bg-midnight {
+  background-color: #0C356A;
+}
+
+.bg-autum {
+  background-color: #F94C10;
+}
+
+.bg-downsea {
+  background-color: #1D5B79;
+}
+
+.bg-moss {
+  background-color: #005B41;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-strawberry {
+  background-color: #900C3F;
+}
+
+.bg-night {
+  background-color: #272829;
+}
+
+.header__superior nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #181818;
+  padding: 1rem 3%;
+  position: relative;
+}
+.header__superior nav .navbar-collapse .navigation__header {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 0;
+  margin: 0 auto;
+}
+.header__superior nav .navbar-collapse .navigation__header a {
+  font-weight: 300;
+  font-family: "IBM Plex Mono", monospace;
+}
+.header__superior nav .navbar-collapse .navigation__header a.selected {
+  color: #ffbf00 !important;
+}
+.header__superior nav .navbar-collapse .ancor__header {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+  margin-left: auto;
+  position: relative;
+}
+.header__superior nav .navbar-collapse .ancor__header .link-edit {
+  width: auto;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 62.5em) {
+  .header__superior nav .navbar-collapse .ancor__header .link-edit {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header__superior nav .navbar-collapse .ancor__header .link-edit a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  gap: 1em;
+  font-weight: 200;
+  font-family: "IBM Plex Mono", monospace;
+  width: 100%;
+}
+.header__superior nav .navbar-collapse .ancor__header .link-edit a i {
+  font-size: 22px;
+}
+.header__superior nav .navbar-collapse .ancor__header .link-edit a .user-img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.header__superior nav .navbar-collapse .ancor__header .compras-icon {
+  position: relative;
+}
+.header__superior nav .navbar-collapse .ancor__header .compras-icon .quantidade {
+  position: absolute;
+  background: #ffbf00;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.8;
+  left: 110px;
+  top: -20px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.header__superior nav .navbar-collapse .ancor__header .compras-icon .quantidade.visible {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.header__superior nav .header__logo__container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header__superior nav .header__logo__container .logo-snickers .logo__title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.4em;
+  position: relative;
+  font-weight: 800;
+  display: flex;
+  padding-left: 0.75em;
+  margin-right: 2em;
+  z-index: 2;
+}
+.header__superior nav .header__logo__container .logo-snickers .logo__title .logo-snicker .snicker__icon {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  z-index: -1;
+  fill: #fff;
+}
+@media screen and (min-width: 62em) {
+  .header__superior nav .header__logo__container .logo-snickers .logo__title {
+    margin-right: 2em;
+  }
+}
+
+header {
+  color: #fff;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+header li a {
+  display: flex;
+  position: relative;
+  line-height: inherit;
+  transition: 0.3s ease-in-out;
+}
+
+.main__section {
+  height: auto;
+  background-color: #000;
+  background-attachment: fixed;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 7rem 9%;
+}
+.main__section::after {
+  content: "SNEAKER";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22vw;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: -1;
+  opacity: 0.03;
+}
+.main__section h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+@media (max-width: 47.75em) {
+  .main__section h2 {
+    text-align: center;
+  }
+}
+.main__section p {
+  color: #dedede;
+  text-transform: uppercase;
+  width: 60%;
+  opacity: 0.5;
+  word-spacing: 0.9em;
+}
+@media (max-width: 47.75em) {
+  .main__section p {
+    text-align: center;
+    width: 100%;
+  }
+}
+.main__section .img__main__container {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+.main__section .img__main__container img {
+  transform: rotate(-30deg) scale(1.3);
+  animation: is-rotate ease-in-out 0.6s alternate;
+}
+
+@keyframes is-rotate {
+  from {
+    transform: rotate(-360deg) scale(0.3);
+  }
+}
+.products__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.products__section .tenis__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  margin: 1rem;
+  padding: 0;
+  border-radius: 4px;
+  position: relative;
+  width: 270px;
+  transition: 0.3s ease-in-out;
+}
+.products__section .tenis__card:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 35px #dedede;
+}
+.products__section .tenis__card .tenis__imagem-template {
+  padding: 0;
+  margin: 0;
+  height: 35vh;
+  width: 100%;
+  background: #dedede;
+}
+.products__section .tenis__card .tenis__imagem-template figure {
+  width: inherit;
+  margin: 0 auto;
+}
+.products__section .tenis__card .tenis__card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.products__section .tenis__card .tenis__card__body .tenis__card__avaliation {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  padding-right: 1rem;
+}
+.products__section .tenis__card .tenis__card__marca {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 5px;
+  left: 20px;
+}
+
+.carrinho__aberto {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  position: relative;
+  padding-top: 3em;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.carrinho__aberto .carrinho__vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 9%;
+  height: 100vh;
+}
+.carrinho__aberto.is-open {
+  display: flex;
+}
+.carrinho__aberto h2 {
+  text-align: center;
+  margin-top: 2em;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.carrinho__aberto .dados__produto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3%;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados {
+  height: 70vh;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados::-webkit-scrollbar {
+  width: 6px;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__produto .imagem__produto__carrinho {
+  display: flex;
+  align-items: center;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__produto .imagem__produto__carrinho img {
+  width: 150px;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__produto .imagem__produto__carrinho .produto__especificacoes h3 {
+  font-weight: 400;
+  font-size: 22px;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__produto .imagem__produto__carrinho .produto__especificacoes h5 {
+  font-weight: 400;
+  font-size: 22px;
+  color: #ababab;
+  font-size: 14px;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__produto .preco__produto__carrinho {
+  display: flex;
+  align-items: center;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__preco {
+  line-height: 7.5;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__quantidade {
+  padding-top: 3.5rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__quantidade .btn__container {
+  background: #dedede;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 0 3px;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__quantidade .btn__container button {
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__total {
+  padding-top: 3.5rem;
+  margin: 0 auto;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__total .total__carrinho {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  text-align: center;
+}
+.carrinho__aberto .dados__produto .produtos__adicionados table .produto__no__carrinho .td__total .total__carrinho button {
+  border: none;
+  background: none;
+  margin-bottom: 0.8rem;
+  margin-left: 1rem;
+  font-size: 16px;
+}
+.carrinho__aberto .detalhes__pedido {
+  align-self: flex-start;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final {
+  background: #dedede;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final h2 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: start;
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final .dados__preco {
+  padding-left: 2rem;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final .dados__preco p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final .dados__preco a {
+  color: #1F8A70;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final .dados__total {
+  margin-top: 2rem;
+  background: #d1d1d1;
+  padding-left: 1rem;
+}
+.carrinho__aberto .detalhes__pedido .dados__pedido__final .dados__total h5 {
+  padding: 1rem;
+}
+.carrinho__aberto .detalhes__pedido .finalizar__btn__container {
+  width: 100%;
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem;
+  background: #1F8A70;
+  color: #fff;
+  text-align: center;
+}
+.carrinho__aberto .detalhes__pedido .finalizar__btn__container:hover {
+  background: #28b492;
+}
+
+.products__feature__section {
+  background: #181818;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+@media (max-width: 1145px) {
+  .products__feature__section {
+    flex-direction: column-reverse;
+  }
+}
+.products__feature__section .img__container__feature {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products__feature__section .img__container__feature img {
+  width: 300px;
+  margin: 0 auto;
+}
+@media (max-width: 1145px) {
+  .products__feature__section .img__container__feature img {
+    width: 400px;
+  }
+}
+.products__feature__section .img__container__feature a {
+  position: absolute;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 200px;
+  text-align: center;
+  padding: 0.6rem;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  font-size: 16px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.products__feature__section .produtos__queima__estoque h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.products__feature__section .produtos__queima__estoque h2 span {
+  display: inline-block;
+  margin: 0 15px;
+  color: #dedede;
+  opacity: 0.3;
+}
+.products__feature__section .produtos__queima__estoque #s-queima {
+  width: 600px;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-pagination-bullet-active {
+  background-color: white;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-pagination-bullet {
+  background-color: grey;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-pagination {
+  bottom: -5px;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+}
+@media (max-width: 768px) {
+  .products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  margin: 1rem;
+  padding: 0;
+  border-radius: 4px;
+  position: relative;
+  width: 270px;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card {
+    width: 50%;
+  }
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 35px #dedede;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card .tenis__imagem-template {
+  padding: 0;
+  margin: 0;
+  height: 35vh;
+  width: 100%;
+  background: #dedede;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card .tenis__imagem-template figure {
+  width: inherit;
+  margin: 0 auto;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card .tenis__card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card .tenis__card__body .tenis__card__avaliation {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  padding-right: 1rem;
+}
+.products__feature__section .produtos__queima__estoque #s-queima .swiper-wrapper .swiper-slide .tenis__card .tenis__card__marca {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 5px;
+  left: 20px;
+}
+
+.tenis__container {
+  background-color: #181818;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1%;
+}
+.tenis__container .swiper {
+  width: 100%;
+  height: auto;
+}
+.tenis__container .swiper .swiper-pagination-bullet-active {
+  background-color: white;
+}
+.tenis__container .swiper .swiper-pagination-bullet {
+  background-color: grey;
+}
+.tenis__container .swiper .swiper-pagination {
+  bottom: 10px;
+  right: 50px;
+}
+.tenis__container .swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+}
+.tenis__container #sl-tenis-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1%;
+}
+@media (max-width: 62.5em) {
+  .tenis__container #sl-tenis-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.tenis__container #sl-tenis-container .img__tenis img {
+  width: 565px;
+}
+.tenis__container #sl-tenis-container .container__cards__tenis {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 37.4375em) {
+  .tenis__container #sl-tenis-container .container__cards__tenis {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.tenis__container #sl-tenis-container .container__cards__tenis h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 34px;
+}
+.tenis__container #sl-tenis-container .container__cards__tenis .cards__container__content {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.tenis__container #sl-tenis-container .container__cards__tenis .cards__container__content .card__tenis {
+  background: #fff;
+  width: 130px;
+  height: 20vh;
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.3);
+}
+.tenis__container #sl-tenis-container .container__cards__tenis button {
+  background: #fff;
+  width: 250px;
+  padding: 1rem;
+  border: none;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.produtcts__general__section {
+  display: flex;
+  background-color: #181818;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 62.5em) {
+  .produtcts__general__section {
+    text-align: center;
+  }
+}
+.produtcts__general__section .filter__products {
+  height: auto;
+  padding: 2rem 5%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 56.1875em) {
+  .produtcts__general__section .filter__products {
+    flex-direction: column;
+  }
+}
+.produtcts__general__section .filter__products button {
+  background: none;
+  border: none;
+}
+.produtcts__general__section .filter__products .filtrar__genero__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.produtcts__general__section .filter__products .filtrar__genero__container button {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #fff;
+}
+.produtcts__general__section .filter__products .filtrar__genero__container button.selected {
+  color: #ffbf00;
+}
+@media (max-width: 62.5em) {
+  .produtcts__general__section .filter__products .filtrar__genero__container {
+    flex-direction: row;
+    font-size: 20px;
+  }
+}
+.produtcts__general__section .filter__products .elementos__busca {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+@media (max-width: 62.5em) {
+  .produtcts__general__section .filter__products .elementos__busca {
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+.produtcts__general__section .filter__products .elementos__busca button {
+  color: #fff;
+}
+.produtcts__general__section .filter__products .elementos__busca button .tenis__card__marca {
+  width: 20px;
+  fill: #fff;
+}
+.produtcts__general__section .filter__products .elementos__busca button:hover {
+  color: #dedede;
+}
+.produtcts__general__section .filter__products .elementos__busca button svg, .produtcts__general__section .filter__products .elementos__busca button i {
+  margin-right: 0.4rem;
+}
+.produtcts__general__section .products__container__title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+@media (max-width: 47.75em) {
+  .produtcts__general__section .products__container__title {
+    margin: 0 auto;
+  }
+}
+.produtcts__general__section .products__container__title span {
+  display: inline-block;
+  margin: 0 15px;
+  color: #dedede;
+  opacity: 0.3;
+}
+@media (max-width: 47.75em) {
+  .produtcts__general__section .products__container__title span {
+    display: none;
+  }
+}
+
+.subscribe__container {
+  width: 100%;
+  background: #181818;
+  padding: 3rem 0;
+}
+.subscribe__container .img__sub__container {
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  padding: 2rem 9%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.subscribe__container .img__sub__container h2 {
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.subscribe__container .img__sub__container a {
+  color: #fff;
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe__container .img__sub__container a i {
+  font-size: 22px;
+}
+.subscribe__container .img__sub__container a:hover {
+  background-color: #fff;
+  color: #181818;
+}
+
+.novidades__container {
+  height: 100vh;
+  background: #181818;
+  position: relative;
+  padding: 3rem 9%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (max-width: 47.75em) {
+  .novidades__container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.novidades__container::before {
+  background: #fff;
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 50%, 100% 100%, 100% 0%);
+  z-index: -1;
+}
+.novidades__container .novidades__title {
+  align-self: flex-start;
+}
+.novidades__container h2 {
+  color: #fff;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: start;
+}
+.novidades__container p {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 16px;
+  letter-spacing: 6px;
+  text-align: start;
+  font-weight: 300;
+  font-family: "IBM Plex Mono", monospace;
+}
+.novidades__container .img__template__container {
+  width: 100%;
+}
+.novidades__container .img__template__container .img__template__super__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 47.75em) {
+  .novidades__container .img__template__container .img__template__super__card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.novidades__container .img__template__container .img__template__super__card p {
+  align-self: flex-start;
+  font-size: 56px;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.novidades__container .img__template__container .img__template__super__card img {
+  width: 700px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+@media (max-width: 47.75em) {
+  .novidades__container .img__template__container .img__template__super__card img {
+    width: 100%;
+  }
+}
+
+.container__rede__social {
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container__rede__social::after {
+  content: "SNEAKER";
+  position: absolute;
+  top: 200px;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 22vw;
+  color: #181818;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: -1;
+  opacity: 0.05;
+  transform: rotate(-30deg);
+}
+.container__rede__social h2 {
+  font-weight: 800;
+  font-family: "IBM Plex Mono", monospace;
+  margin-top: 2rem;
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+.container__rede__social .container__imgs__rede__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  position: relative;
+  gap: 12px;
+}
+.container__rede__social .container__imgs__rede__social .card__img {
+  width: 230px;
+  margin: 0.5rem auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__rede__social .container__imgs__rede__social .card__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40vh;
+  width: 230px;
+  filter: brightness(70%);
+  transition: 0.6s ease-in-out;
+  border-radius: 4px;
+}
+.container__rede__social .container__imgs__rede__social .card__img img:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+}
+.container__rede__social a {
+  border: 1px solid #000;
+  width: 200px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+.container__rede__social a i {
+  margin-left: 1rem;
+}
+.container__rede__social a:hover {
+  background-color: #181818;
+  color: #fff;
+}
+
+.form__checkout__container {
+  height: 82vh;
+  position: relative;
+  z-index: 2;
+}
+.form__checkout__container h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.form__checkout__container::before {
+  background: #fff;
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 40%;
+  -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+.form__checkout__container form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+  color: #fff;
+}
+.form__checkout__container form .title__wrapper {
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+.form__checkout__container form .title__wrapper h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+.form__checkout__container form .title__wrapper .line-wrapper {
+  width: 100%;
+  background-color: #ffbf00;
+  height: 4px;
+}
+.form__checkout__container form .form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  width: 80%;
+  height: 80vh;
+  background-color: #272829;
+}
+.form__checkout__container form .form__wrapper .control__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 1rem;
+}
+.form__checkout__container form .dados__pagamento {
+  padding: 1rem;
+  gap: 2em;
+  border-radius: 4px;
+}
+.form__checkout__container form .dados__pagamento .form-control {
+  border-radius: 0;
+}
+.form__checkout__container form .btn__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0 1em;
+}
+.form__checkout__container form .btn__container button {
+  background-color: #ffbf00;
+  color: #fff;
+  padding: 0.5em;
+  width: 200px;
+  border-radius: 0;
+}
+.form__checkout__container form .btn__container a {
+  padding: 0.5em;
+  width: 200px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+}
+
+.form__dados__pessoais__container {
+  padding: 2rem 9%;
+}
+.form__dados__pessoais__container h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.form__dados__pessoais__container .line-wrapper {
+  width: 100%;
+  background-color: #ffbf00;
+  height: 4px;
+}
+.form__dados__pessoais__container form .control__container {
+  margin-top: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.form__dados__pessoais__container form .control__container .input-container {
+  width: 100%;
+}
+.form__dados__pessoais__container form .control__container .form-control {
+  border-radius: 0;
+}
+.form__dados__pessoais__container form .btn__container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__dados__pessoais__container form .btn__container button {
+  background-color: #ffbf00;
+  color: #fff;
+  padding: 0.5em;
+  width: 200px;
+  border-radius: 0;
+}
+.form__dados__pessoais__container form .btn__container a {
+  padding: 0.5em;
+  width: 200px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+}
+
+.login__form {
+  background: #fff;
+}
+.login__form .form__container {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.login__form .form__container .bg__img__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  padding: 0;
+  position: relative;
+}
+.login__form .form__container .bg__img__container .img__bg {
+  position: absolute;
+}
+.login__form .form__container .bg__img__container a {
+  color: #000;
+  position: absolute;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  width: 50px;
+  text-align: center;
+  top: 40px;
+  left: 40px;
+}
+.login__form .form__container .bg__img__container button {
+  background: rgba(255, 255, 255, 0.9);
+  height: 90px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 24px 0 0 24px;
+  border: none;
+  width: 200px;
+  margin: 3rem 0;
+  transition: 0.3s ease-in-out;
+}
+.login__form .form__container .bg__img__container button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.login__form .form__container .bg__img__container button.selected {
+  color: #900C3F;
+}
+@media (max-width: 62.5em) {
+  .login__form .form__container .bg__img__container {
+    height: 80vh;
+    background-size: cover;
+    width: 100%;
+    background-position: 10% 100%;
+    background-attachment: fixed;
+  }
+}
+.login__form .form__container .form__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  border-radius: 0 0 0px 100px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.75);
+}
+.login__form .form__container .form__main svg {
+  margin-bottom: 3rem;
+}
+.login__form .form__container .form__main .form__dom .input-container {
+  position: relative;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label {
+  position: absolute;
+  top: 5px;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label i {
+  font-size: 22px;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-control {
+  border: none;
+  border-bottom: 1px solid #181818;
+  border-radius: 0;
+}
+.login__form .form__container .form__main .form__dom .input-container:focus-within .form-label {
+  display: none;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label.filled {
+  display: none;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label.filled:has(#icone-verificacao) {
+  display: flex;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label.filled:has(#icone-verificacao) .l-text-create-pass {
+  display: none;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label.filled:has(#icone-verificacao) .fa-lock {
+  display: none;
+}
+.login__form .form__container .form__main .form__dom .input-container .form-label.filled:has(#icone-verificacao) #icone-verificacao {
+  position: absolute;
+  right: 0;
+  display: flex;
+  top: 2px;
+}
+.login__form .form__container .form__main .form__dom .btn__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.login__form .form__container .form__main .form__dom .btn__container .esqueceu__senha__btn:hover {
+  text-decoration: underline;
+}
+.login__form .form__container .form__main .form__dom .btn__container button {
+  background: none;
+  border: none;
+  width: 150px;
+  text-align: center;
+  background: #181818;
+  color: #fff;
+  padding: 0.5rem;
+}
+.login__form .form__container .form__main .form__dom .registrar__container {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+.login__form .form__container .form__main .form__dom .registrar__container .input-container:last-child {
+  grid-column: 1/-1;
+}
+.login__form .form__container .form__main .form__dom .registrar__container .form-label:has(#icone-verificacao) {
+  width: 100%;
+}
+.login__form .form__container .form__main .form__dom .registrar__container .form-label:has(#icone-verificacao) #icone-verificacao {
+  position: absolute;
+  right: 0;
+}
+.login__form .form__container .form__main .form__dom .btn__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.login__form .form__container .form__main .form__dom .btn__container button {
+  width: 250px;
+  margin-top: 1rem;
+  border: none;
+  background: #181818;
+  padding: 0.5rem;
+  color: #fff;
+}
+.login__form .form__container .fazer__login__diferente {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 9%;
+  margin-bottom: 0.5rem;
+}
+.login__form .form__container .fazer__login__diferente p {
+  margin: 0;
+}
+.login__form .form__container .fazer__login__diferente a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.login__form .form__container .fazer__login__diferente a:hover {
+  text-decoration: underline;
+}
+.login__form .form__container .fazer__login__diferente a .icon-img {
+  width: 15px;
+}
+
+.cancelar button {
+  border-radius: 0;
+}
+.cancelar button:nth-child(1) {
+  background-color: #ffbf00;
+}
+
+.confirmar .modal-body .modal-title {
+  font-weight: 600;
+  font-family: "IBM Plex Mono", monospace;
+}
+.confirmar .modal-body .icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.confirmar .modal-body .icon__wrapper img {
+  width: 200px;
+}
+.confirmar .modal-body .icon__wrapper i {
+  font-size: 3em;
+}
+.confirmar .modal-body .icon__wrapper button {
+  background-color: #181818;
+  color: #fff;
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+.confirmar .modal-body .data__container {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+}
+.confirmar .modal-body .data__container .container__endereco {
+  border-left: 1px solid #c5c5c5;
+  padding-left: 1rem;
+}
+.confirmar .modal-body .data__container h2 {
+  font-weight: 600;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 22px;
+}
+.confirmar .modal-body h3 {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout {
+  background-color: #333536;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2em;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .img__container {
+  background: #fff;
+  height: 90px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .img__container img {
+  width: 90px;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container h2 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container p {
+  color: #ffbf00;
+  font-weight: 300;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container p:nth-child(2) {
+  color: #ffbf00;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container .tamanho__container {
+  text-align: start;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container .tamanho__container p {
+  color: #1F8A70;
+}
+.confirmar .modal-body .produtos__confirmar .card__checkout .text-container .tamanho__container p:nth-child(2) {
+  color: #dedede;
+}
+.confirmar .modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.confirmar .modal-footer a {
+  border-radius: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.confirmar .modal-footer a:nth-child(2) {
+  background-color: #ffbf00;
+}
+
+footer {
+  height: auto;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 3%;
+  font-weight: 300;
+}
+footer .footer__body {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 47.75em) {
+  footer .footer__body {
+    flex-direction: column;
+  }
+}
+footer .footer__body .links__container {
+  margin-bottom: 1rem;
+}
+footer .footer__body .links__container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .footer__body .social__container h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+footer .footer__body .social__container ul {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+footer .footer__body .social__container ul a {
+  font-size: 22px;
+}
+footer .footer__body .logo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 45vh;
+  text-align: center;
+}
+footer .footer__body .logo__container .icon__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+footer .footer__body .logo__container .icon__container svg {
+  fill: #fff;
+}
+footer .footer__body .logo__container .icon__container small {
+  margin: 1rem;
+}
+
+.produto__aberto {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.produto__aberto .produto__display {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  position: relative;
+  margin-top: 1em;
+}
+.produto__aberto .produto__display .imagem__produto__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  flex-direction: column;
+  position: relative;
+}
+.produto__aberto .produto__display .imagem__produto__box .box__lupa-icon {
+  color: #dedede;
+  position: absolute;
+  background: #fff;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 30px;
+  top: 25%;
+}
+.produto__aberto .produto__display .imagem__produto__box .imagens__display {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.produto__aberto .produto__display .imagem__produto__box .imagens__display .imagem__cor {
+  border-radius: 4px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  font-size: 22px;
+  background: #fff;
+  font-weight: 400;
+}
+.produto__aberto .produto__display .imagem__produto__box .imagens__display .imagem__cor.selected {
+  border: 1px solid #ffbf00;
+}
+.produto__aberto .produto__display .descricao__produto {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2em;
+  text-align: start;
+  width: 30%;
+  height: auto;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+@media (max-width: 62.5em) {
+  .produto__aberto .produto__display .descricao__produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+.produto__aberto .produto__display .descricao__produto h2 {
+  font-weight: 300;
+}
+.produto__aberto .produto__display .descricao__produto .descricao__produto__menu h3 {
+  font-weight: 400;
+}
+.produto__aberto .produto__display .descricao__produto .descricao__produto__menu .h3__guia {
+  font-weight: 400;
+  padding-left: 1em;
+  color: #7e7e7e;
+}
+.produto__aberto .produto__display .descricao__produto .container__tamanho__tenis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 65%;
+  position: relative;
+}
+@media (max-width: 62.5em) {
+  .produto__aberto .produto__display .descricao__produto .container__tamanho__tenis {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.produto__aberto .produto__display .descricao__produto .container__tamanho__tenis .box__tamanho {
+  border-radius: 4px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: none;
+  transition: 0.3s ease-in-out;
+  padding: 0.9em;
+  cursor: pointer;
+}
+.produto__aberto .produto__display .descricao__produto .container__tamanho__tenis .box__tamanho p {
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Square721 BT", sans-serif;
+  color: #7e7e7e;
+  text-align: center;
+}
+.produto__aberto .produto__display .descricao__produto .container__tamanho__tenis .box__tamanho:hover {
+  background: #e6e6e6;
+  transition: 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 1px 1px 5px #000;
+}
+.produto__aberto .produto__display .descricao__produto .container__tamanho__tenis .box__tamanho.selected {
+  background: #fff;
+  box-shadow: 1px 1px 5px #000;
+}
+.produto__aberto .produto__display .descricao__produto .btn__container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.produto__aberto .produto__display .descricao__produto .btn__container button {
+  border: none;
+  width: 220px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: #fff;
+  background: #ffbf00;
+  color: #272829;
+}
+.produto__aberto .produto__display .descricao__produto .btn__container p {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #7e7e7e;
+}
+.produto__aberto .produto__display .descricao__produto .descricao__footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2em;
+  color: #7e7e7e;
+}
+.produto__aberto .produto__display .descricao__produto .descricao__footer a i {
+  padding-left: 1em;
+}
+.produto__aberto .produto__display .error-tamanho {
+  position: absolute;
+  background: #ffbf00;
+  padding: 1rem;
+  top: 20%;
+  font-size: 22px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+.produto__aberto .produto__display .error-tamanho.visible {
+  transition: 1s ease-in-out;
+  opacity: 0.8;
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+}
+.navbar-toggler span {
+  color: #fff;
+  font-size: 34px;
+}
+
+.esqueceu__senha__form {
+  padding: 2rem 9%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper {
+  padding: 1rem;
+  box-shadow: 1px 1px 3px #181818;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form button {
+  width: 240px;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas {
+  height: 100px;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container.disabled {
+  color: #dedede;
+  pointer-events: none;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container.disabled .form-control {
+  border-color: #dedede;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label {
+  position: absolute;
+  top: 5px;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label i {
+  font-size: 22px;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-control {
+  border: none;
+  border-bottom: 1px solid #181818;
+  border-radius: 0;
+  z-index: 2;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled {
+  display: none;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled:has(#icone-verificacao) {
+  position: relative;
+  display: flex;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled:has(#icone-verificacao) .form-label-text {
+  display: none;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled:has(#icone-verificacao) #icone-verificacao {
+  position: absolute;
+  right: 0;
+  display: flex;
+  top: 10px;
+  font-size: 22px;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled:has(.icone__verificar__senha__igual) {
+  display: flex;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled:has(.icone__verificar__senha__igual) .form-label-text {
+  display: none;
+}
+.esqueceu__senha__form .esqueceu__senha__wrapper form .form__datas .input-container .form-label.filled:has(.icone__verificar__senha__igual) .icone__verificar__senha__igual {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  display: flex;
+  font-size: 22px;
+}
+
+.user__wrapper {
+  padding: 2rem 2%;
+}
+.user__wrapper .accordion-button {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+.user__main {
+  height: auto;
+}
+.user__main h4 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.user__main input[type=email] {
+  background-color: #f8f8f8;
+}
+.user__main input[type=password] {
+  background-color: #f8f8f8;
+}
+.user__main input.disabled {
+  pointer-events: none;
+}
+.user__main .form-control {
+  border-radius: 0;
+}
+.user__main .input-group.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.user__main .profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user__main .profile-picture img {
+  width: 263px;
+  height: 263px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user__main .user__name h2 span {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.user__main .user__profile__datas {
+  height: auto;
+}
+.user__main .user__profile__datas form {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user__main .user__profile__datas form .user__name__email {
+  height: 20vh;
+}
+.user__main .user__profile__datas form .input-container {
+  position: relative;
+}
+.user__main .user__profile__datas form .input-container .name-update, .user__main .user__profile__datas form .input-container .tel-update {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #1F8A70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  gap: 1em;
+  z-index: 99;
+  pointer-events: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.user__main .user__profile__datas form .input-container .name-update.is-visible, .user__main .user__profile__datas form .input-container .tel-update.is-visible {
+  animation: fly ease-in-out 3s;
+  transition: 1s ease-in-out;
+}
+.user__main .user__profile__datas form button {
+  width: 250px;
+}
+
+@keyframes fly {
+  from {
+    opacity: 0.5;
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(-180px);
+    opacity: 0;
+  }
+}
+.user__configure {
+  height: 100vh;
+  background-color: #181818;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user__configure .line-wrapper {
+  background: #5f5f5f;
+  width: 100%;
+  height: 1px;
+}
+.user__configure .superior__user__configure {
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 0.5rem;
+}
+.user__configure .superior__user__configure .user__stats h2 {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+.user__configure .superior__user__configure .user__stats h3 {
+  font-size: 14px;
+}
+.user__configure .superior__user__configure .profile-picture img {
+  width: 63px;
+  height: 63px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user__configure .user__configure__menu {
+  padding-top: 0.5rem;
+}
+.user__configure .user__configure__menu ul {
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  padding: 0;
+}
+.user__configure .user__configure__menu ul a {
+  color: #fff;
+  padding: 2rem;
+  border: 0.5px solid #2c2c2c;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+.user__configure .user__configure__menu ul a::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 211, 12, 0.5), transparent);
+  transition: 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.user__configure .user__configure__menu ul a:hover::before {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.user__configure .user__configure__menu ul a p {
+  transition: 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #787878;
+}
+.user__configure .user__configure__menu ul a p span {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+}
+.user__configure .user__configure__menu ul a p i:nth-child(2) {
+  display: none;
+}
+.user__configure .user__configure__menu ul a:hover p {
+  transform: translateX(10px);
+}
+.user__configure .user__configure__menu ul a:hover p i {
+  color: #ffbf00;
+  transition: 0.3s ease-in-out;
+  transform: rotate(360deg);
+}
+.user__configure .user__configure__menu ul a:hover p i:nth-child(2) {
+  display: block;
+}
+.user__configure .user__logout {
+  padding: 2rem;
+  text-align: start;
+}
+.user__configure .user__logout button {
+  font-family: "IBM Plex Mono", monospace;
+  color: #787878;
+}
+.user__configure .user__logout button i {
+  transform: rotate(180deg);
+  margin-right: 0.5rem;
+}
+
+.progressbar-wrapper {
+  background: #272829;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progressbar-wrapper .progressbar {
+  width: 100%;
+  counter-reset: step;
+}
+.progressbar-wrapper .progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+.progressbar-wrapper .progressbar li::before {
+  width: 40px;
+  height: 40px;
+  content: "";
+  line-height: 60px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 3px auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progressbar-wrapper .progressbar li::after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 30px;
+  left: -50%;
+  z-index: 0;
+}
+.progressbar-wrapper .progressbar li::after.complete {
+  background-color: #1F8A70;
+}
+.progressbar-wrapper .progressbar li:first-child::after {
+  content: none;
+}
+.progressbar-wrapper .progressbar li.active {
+  color: #0081C9;
+  font-weight: bold;
+}
+.progressbar-wrapper .progressbar li.active::before {
+  border-color: #0081C9;
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  font-size: 1.5em;
+}
+.progressbar-wrapper .progressbar li.complete {
+  color: #1F8A70;
+  font-weight: bold;
+}
+.progressbar-wrapper .progressbar li.complete::before {
+  content: "\f058";
+  font-family: "FontAwesome";
+  border-color: #1F8A70;
+  font-size: 2.2em;
+}
+.progressbar-wrapper .progressbar li.active + li::after {
+  background-color: #7d7d7d;
+}
+.progressbar-wrapper .progressbar li.complete + li::after {
+  background-color: #1F8A70;
+}
+
+.produtos__checkout {
+  background-color: #272829;
+  height: 80vh;
+  padding-left: 0;
+  border: 1px solid #ffc51a;
+  border-radius: 8px;
+}
+.produtos__checkout .container__cards__produtos__checkout {
+  padding: 1rem;
+  height: 70vh;
+  overflow: scroll;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout {
+  background-color: #333536;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2em;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .img__container {
+  background: #fff;
+  height: 90px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .img__container img {
+  width: 90px;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container h2 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container p {
+  color: #ffbf00;
+  font-weight: 300;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container p:nth-child(2) {
+  color: #ffbf00;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container .tamanho__container {
+  text-align: start;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container .tamanho__container p {
+  color: #1F8A70;
+}
+.produtos__checkout .container__cards__produtos__checkout .card__checkout .text-container .tamanho__container p:nth-child(2) {
+  color: #dedede;
+}
+.produtos__checkout .line-wrapper {
+  width: 100%;
+  height: 3px;
+  background-color: #333536;
+}
+.produtos__checkout .total__container {
+  color: #fff;
+  padding: 2rem;
+  text-align: start;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.produtos__checkout .total__container p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.produtos__checkout .total__container p:nth-child(2) {
+  color: #ffbf00;
+}
+
+.logo-container {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  border-radius: 0% 0% 50% 0;
+}
+.logo-container svg {
+  width: 70px;
+  fill: #fff;
+}
+
+.confirmar__container {
+  height: auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 9%;
+  flex-direction: column;
+}
+.confirmar__container::before {
+  background: #fff;
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  -webkit-clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+  z-index: -1;
+}
+.confirmar__container .confirmar__wrapper {
+  height: auto;
+  background-color: #272829;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 4px;
+  border: 1px solid #ffbf00;
+}
+.confirmar__container .confirmar__wrapper h2 {
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar {
+  padding: 1rem;
+  height: 50vh;
+  overflow: scroll;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout {
+  background-color: #333536;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2em;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .img__container {
+  background: #fff;
+  height: 90px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .img__container img {
+  width: 90px;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container h2 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container p {
+  color: #ffbf00;
+  font-weight: 300;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container p:nth-child(2) {
+  color: #ffbf00;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container .tamanho__container {
+  text-align: start;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container .tamanho__container p {
+  color: #1F8A70;
+}
+.confirmar__container .confirmar__wrapper .produtos__confirmar .card__checkout .text-container .tamanho__container p:nth-child(2) {
+  color: #dedede;
+}
+.confirmar__container .confirmar__wrapper .dados__cartao {
+  color: #fff;
+}
+.confirmar__container .confirmar__wrapper .dados__cartao h2 {
+  font-size: 16px;
+  margin-left: 0;
+}
+.confirmar__container .confirmar__wrapper .dados__cartao h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  color: #dedede;
+}
+.confirmar__container .confirmar__wrapper .dados__cartao p {
+  font-size: 13px;
+}
+.confirmar__container .confirmar__wrapper .produtos__status {
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #333536;
+  padding: 1rem;
+  width: auto;
+  border-radius: 8px;
+}
+.confirmar__container .confirmar__wrapper .produtos__status p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+}
+.confirmar__container .confirmar__wrapper .produtos__status p:nth-child(2) {
+  color: #ffbf00;
+}
+.confirmar__container .confirmar__wrapper .btn__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.confirmar__container .confirmar__wrapper .btn__container button {
+  background-color: #ffbf00;
+  color: #fff;
+  padding: 0.5em;
+  width: 200px;
+  border-radius: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+.confirmar__container .confirmar__wrapper .btn__container button:hover {
+  background-color: #ffc51a;
+}
+.confirmar__container .confirmar__wrapper .btn__container button:nth-child(1) {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ffbf00;
+}
+.confirmar__container .confirmar__wrapper .btn__container button:nth-child(1):hover {
+  color: #000;
+  background-color: #ffbf00;
+}
+
+.card__pedido__container {
+  padding: 2rem 3%;
+  margin-bottom: 1em;
+}
+.card__pedido__container .card__pedido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  background-color: #fafafa;
+  padding: 1em;
+  color: #fff;
+  border-radius: 4px;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+.card__pedido__container .card__pedido .itens__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: scroll;
+  gap: 0.5em;
+}
+.card__pedido__container .card__pedido .itens__wrapper .itens__container {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  position: relative;
+  min-width: 300px;
+}
+.card__pedido__container .card__pedido .itens__wrapper .itens__container .img__container {
+  background-color: #dedede;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+}
+.card__pedido__container .card__pedido .itens__wrapper .itens__container .img__container img {
+  width: 200px;
+}
+.card__pedido__container .card__pedido .itens__wrapper .itens__container .tenis__card__body {
+  width: inherit;
+  background-color: #272829;
+  color: #fff;
+  padding: 1em;
+  border-radius: 0 0 4px 4px;
+  font-weight: 300;
+}
+.card__pedido__container .card__pedido .itens__wrapper .itens__container .tenis__card__body .preco {
+  color: #ffbf00;
+}
+.card__pedido__container .card__pedido .dados__pedido__container {
+  width: 100%;
+  padding: 0 1em;
+  color: #181818;
+}
+.card__pedido__container .card__pedido .dados__pedido__container p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.card__pedido__container .card__pedido .dados__pedido__container p span {
+  color: #ffbf00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #181818;
+  background: #fff;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 800;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input::-moz-placeholder {
+  font: inherit;
+}
+
+input::placeholder {
+  font: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: calc(1.3em + 1vw);
+  font-weight: 800;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.bg__img__container {
+  background-image: url(../assets/login-bg-img.jpg);
+}
+
+.img__sub__container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../assets/nike-template.png);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,12 @@
+$component-name : "user__wrapper";
+
+.#{$component-name} {
+    padding: 2rem 2%;
+
+    .accordion-button {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+    }
+
+    
+}

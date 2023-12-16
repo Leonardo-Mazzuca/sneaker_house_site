@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Senha</title>
+
+       
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="./styles/index.css" />
+
+    
+</head>
+<body>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Sua senha foi alterada com sucesso. Clique no botão abaixo para fazer login.
+            </div>
+            <div class="modal-footer">
+              <a href="login.html" class="btn btn-dark rounded-0">Ir para o Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <section class="esqueceu__senha__form">
+
+    <article class="esqueceu__senha__wrapper">
+
+    <div>
+
+        <h1>
+            Alterar Senha
+        </h1>
+
+
+    </div>
+
+        <form id="form__nova__senha" action="./php/alterarSenha.php" method="POST">
+
+        <section>
+            <div class="form__datas">
+
+                <div class="input-container">
+    
+                    <label class="form-label" for="email-nova-senha">
+                       <p class="form-label-text"> Digite seu email</p> 
+                    </label>
+        
+                    <input class="form-control" name="email-nova-senha" type="email" id="email-nova-senha" required>
+                    
+                    <div class="error-email text-danger">
+    
+                    </div>
+                </div>
+
+                <div class="input-container">
+    
+                <label class="form-label" for="nova__senha">
+                   <p class="form-label-text"> Digite sua nova senha</p> 
+                   <i id="icone-verificacao" class=""></i>
+                </label>
+    
+                <input class="form-control" name="nova__senha" type="password" id="nova__senha" required>
+                
+                <div class="error-password text-danger">
+    
+                </div>
+    
+                </div>
+    
+                <div id="input-disabled" class="input-container disabled my-3">
+    
+                <label class="form-label " for="nova__senha__again">
+                <p class="form-label-text"> Digite mais uma vez</p> 
+                <i class="icone__verificar__senha__igual"></i>
+                </label>
+    
+                <input  class="form-control" name="nova__senha__again" type="password" id="nova__senha__again" required>
+
+                           
+                <div class="error-password-again text-danger">
+                    
+                </div>
+    
+    
+                </div>
+
+            </div>
+        </section>
+
+            <button class="btn btn-dark rounded-0">
+                Alterar
+            </button>
+
+
+        </form>
+    </article>
+    </section>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+
+    
+    
+
+    <script type="module" src="./app/registro/esqueceuSenha.js"></script>
+    
+</body>
+</html>

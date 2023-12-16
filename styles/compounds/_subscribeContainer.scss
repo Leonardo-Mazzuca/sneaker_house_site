@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap');
+
+$compound-name : 'subscribe__container';
+
+.#{$compound-name} {
+
+    
+    width: 100%;
+    background: $darkness;
+    padding: 3rem 0;
+
+    .img__sub__container{
+
+        background-size: cover;
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        padding: 2rem 9%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        
+
+
+        h2{
+
+            color: $white;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 300;
+            
+        }
+
+        a {
+
+            color: $white;
+            width: 200px;
+            padding: 0.5rem;
+            border: 1px solid $white;
+            border-radius: $radius-20-px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            i{
+                font-size: $fs-high;
+            }
+
+            &:hover{
+
+                background-color: $white;
+                color: $darkness;
+
+            }
+
+
+        }
+    }
+
+
+
+}

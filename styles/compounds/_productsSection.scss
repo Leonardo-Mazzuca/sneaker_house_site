@@ -1,0 +1,82 @@
+$compound-name : 'products__section';
+
+.#{$compound-name}{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $black;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+    .tenis__card{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: $white;
+        margin: 1rem;
+        padding: 0;
+        border-radius: $radius-4-px;
+        position: relative;
+        width: 270px;
+        transition: $transition-fast;
+
+
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 1px 1px 35px $smoke;
+        }
+        
+
+        .tenis__imagem-template{
+            padding: 0;
+            margin: 0;
+            height: 35vh;
+            width: 100%;
+            background: $smoke;
+
+            figure{
+
+                width: inherit;
+                margin: 0 auto;
+
+            }
+            
+        }
+
+        .tenis__card__body{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            
+
+            .tenis__card__avaliation{
+                display: flex;
+                justify-content: space-between;
+                width: inherit;
+                padding-right: 1rem;
+            }
+        }
+
+        .tenis__card__marca{
+            
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            top: 5px;
+            left: 20px;
+            
+        }
+
+
+
+
+    }
+}

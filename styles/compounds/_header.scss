@@ -1,0 +1,26 @@
+@import '../components/headerTop';
+
+
+
+header {
+
+
+
+    color: $white;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: auto;
+
+
+    li{
+        a{
+            display: flex;
+            position: relative;
+            line-height: inherit;
+            transition: $transition-fast;
+        }
+    }
+
+
+}

@@ -1,0 +1,134 @@
+$component-name : "user__main";
+
+
+.#{$component-name} {
+
+    height: auto;
+
+
+
+
+    h4 {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+    }
+
+    input[type = "email"] {
+        background-color: lighten($smoke,10);
+    }
+
+    input[type = "password"] {
+        background-color: lighten($smoke,10);
+    }
+
+    input.disabled {
+        pointer-events: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    .input-group.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .profile-picture {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #f0f0f0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-picture img {
+        width: 263px;
+        height: 263px;
+        object-fit: cover;
+    }
+    
+
+    .user__name {
+
+        h2 {
+             span {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 300;
+            }
+    
+    }
+    }
+
+
+
+    .user__profile__datas {
+        height: auto;
+
+        form {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .user__name__email {
+                height: 20vh;
+                
+            }
+
+            .input-container {
+                position: relative;
+
+                .name-update, .tel-update{
+                    position: absolute;
+                    width: 100%;
+                    height: 60px;
+                    background-color: $money;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: $fs-high;
+                    gap: 1em;
+                    z-index: 99;
+                    pointer-events: none;
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-weight: 300;
+                    transition: $transition-slow;
+                    opacity: 0;
+
+                    &.is-visible {
+                        animation: fly ease-in-out 3s;
+                        transition: $transition-slow;
+                    }
+                }
+               
+                
+            }
+     
+
+            button {
+                width: 250px;
+            }
+            
+        }
+    }
+
+    
+    
+}
+
+@keyframes fly {
+    from {
+        opacity: 0.5;
+        transform: translateY(80px);
+    }
+
+    to {
+     
+        transform: translateY(-180px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,249 @@
+$component-name: "produto__aberto";
+
+.#{$component-name} {
+  margin: 0 auto;
+  width: 100%;
+  background-color: lighten($smoke, 10);
+
+  .produto__display {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    position: relative;
+    margin-top: 1em;
+
+    .imagem__produto__box {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+        position: relative;
+
+
+
+
+        .box__lupa-icon{
+
+            color: $smoke;
+            position: absolute;
+            background: $white;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-radius: $radius-50-percent;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 30px;
+            top: 25%;
+            
+            
+
+            
+
+        }
+
+
+      .imagens__display {
+    
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2em;
+        margin-left: 3em;
+        margin-bottom: 2em;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .imagem__cor {
+
+          border-radius: $radius-4-px;
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          font-size: $fs-high;
+          background: $white;
+          font-weight: 400;
+          
+
+          &.selected {
+            border: 1px solid $fall;
+          }
+
+
+        }
+      }
+    }
+
+    .descricao__produto {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 2em;
+      text-align: start;
+      width: 30%;
+      height: auto;
+      align-self: center;
+      margin-bottom: 2rem;
+
+      @include breakpoint(medium-normal) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      h2 {
+        font-weight: 300;
+      }
+
+
+      .descricao__produto__menu{
+        
+          h3{
+            font-weight: 400;
+          }
+    
+          .h3__guia{
+            font-weight: 400;
+            padding-left: 1em;
+            color: lighten($darkness, 40);
+          }
+
+
+
+
+      }
+
+      .container__tamanho__tenis {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        width: 65%;
+        position: relative;
+
+        @include breakpoint(medium-normal) {
+          align-items: center;
+          justify-content: center;
+        }
+
+        .box__tamanho {
+          border-radius: $radius-4-px;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          background: none;
+          transition: $transition-fast;
+          padding: 0.9em;
+          cursor: pointer;
+  
+
+          p {
+
+            font-weight: 600;
+            font-size: $fs-high;
+            font-family: 'Square721 BT', sans-serif;
+            color: lighten($darkness, 40);
+            text-align: center;
+            
+
+          }
+
+
+          &:hover {
+            background: darken($white, 10);
+            transition: $transition-fast;
+            background: $white;
+            box-shadow: 1px 1px 5px $black;
+          }
+
+          &.selected {
+            background: $white;
+            box-shadow: 1px 1px 5px $black;
+          }
+
+    
+
+        }
+
+ 
+
+      }
+
+      .btn__container {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+
+        button {
+          border: none;
+          width: 220px;
+          height: 50px;
+          border-radius: $radius-4-px;
+          font-weight: 500;
+          font-size: 18px;
+          margin-bottom: 1rem;
+          color: $white;
+          background: $fall;
+          color: $night;
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 30px;
+          letter-spacing: 3px;
+          color: lighten($darkness, 40);
+        }
+      }
+
+      .descricao__footer{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2em;
+        color: lighten($darkness, 40);
+        
+
+        a{
+           i{
+            padding-left: 1em;
+           }
+        }
+
+      }
+
+
+
+    }
+
+    .error-tamanho {
+      position: absolute;
+      background: $fall;
+      padding: 1rem;
+      top: 20%;
+      font-size: $fs-high;
+      opacity: 0;
+      transition: $transition-slow;
+
+
+      &.visible{
+        transition: $transition-slow;
+        opacity: 0.8;
+ 
+      }
+    }
+
+
+
+  }
+}

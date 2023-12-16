@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SnickerHouse - Checkout</title>
+    
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+    
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+        />
+    
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+    
+        <link rel="stylesheet" href="./styles/index.css" />
+    
+        <script src="https://unpkg.com/scrollreveal"></script>
+      </head>
+<body class="bg-night">
+
+    <header class="position-relative p-3">
+
+        <div class="progressbar-wrapper">
+            <ul class="progressbar ">
+
+                <li class="complete">Adicionar ao carrinho</li>
+                <li class="active">Dados do cartão</li>
+                <li>Dados pessoais</li>
+                <li>Confirmação</li>
+
+            </ul>
+      </div>
+      
+
+
+    </header>
+
+    <div class="modal cancelar" tabindex="-1" id="cancelarModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Confirme o cancelamento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Você realmente deseja cancelar sua compra?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Voltar</button>
+            <button type="button" id="cancelar-compra-geral" class="btn btn-dark">Confirmar cencelamento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal confirmar" tabindex="-1" id="confirmacaoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+
+            <h5 class="modal-title text-center">Seu pedido está a caminho!</h5>
+
+            <div class="icon__wrapper">
+              
+               <img src="./assets/truck.gif" alt="GIF de um caminhão indo fazer uma entrega" class="img-fluid">
+
+               <button class="btn">
+                Rastrar entrega
+               </button>
+
+               <p class="mt-3">
+                Seu pedido chegará em <span id="random-date"></span>
+               </p>
+          
+            </div>
+
+            <section class="p-3 mt-3">
+              <div class="data__container">
+                
+                <div class="d-flex flex-column p-2">
+                  <h2 class="my-3">
+                    Pedido
+                  </h2>
+  
+                  <p>
+                    ID Do pedido - <span id="codigo-pedido">12334</span> 
+                  </p>
+  
+                  <p>
+                    Data da emissão <span id="date-now"></span>
+                  </p>
+  
+                  <p class="total-confirmar">
+                    
+                  </p>
+                </div>
+
+               
+
+                <div class="container__endereco d-flex flex-column p-2">
+                  <h2 class="my-3">
+                    Endereço
+                  </h2>
+
+                
+                  <p class="cidade-estado">
+                    Cidade estado
+                  </p>
+                  <p class="endereco">
+                    Endereço
+                  </p>
+                  <div class="d-flex">
+                    <p class="bairro">
+                      Bairro
+                    </p>
+                    <span class="me-2"> , </span>
+                    <p class="cep">
+                      cep
+                    </p>
+                  </div>
+
+                </div>
+                
+  
+              </div>
+            </section>
+
+            <h3>
+              Produtos adiquiridos
+            </h3>
+
+            <section class="produtos__confirmar">
+                  
+            </section>
+
+            <h4 class="text-dark text-center mt-3 fw-light">
+              Qualquer problema contatar zukaDev@gmail.com
+            </h4>
+
+          </div>
+
+          <div class="modal-footer">
+            <a href="./index.html"  id="continuar-comprando" 
+            class="btn btn-dark" >Continuar comprando</a>
+            <a href="./php/usuarioPage.php" id="ir-para-perfil" class="btn">Meu perfil</a>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <main>
+
+      <section class="confirmar__container">
+
+          <article class="confirmar__wrapper">
+            <h2 class="text-light">
+              Confirmar Compra
+            </h2>
+
+            <div class="produtos__controller">
+
+              <div class="d-flex align-items-center row row-cols-1">
+
+                <section class="produtos__confirmar col-lg-6">
+                  
+                </section>
+  
+                <section class="dados__cartao col-lg-6">
+
+                  <h2>
+                   Suas informações
+                  </h2>
+
+                  <hr>
+
+                  <section class="d-flex justify-content-between">
+                    <div class="d-flex flex-column justify-content-between">
+                      <div class="d-flex flex-column">
+                        <h3>
+                          Email
+                        </h3>
+                        <p id="email-checkout">Email</p>
+                      </div>
+                      
+                      <div class="d-flex flex-column">
+                        <h3>
+                          Cartão
+                        </h3>
+                        <p id="nome-titular">Nome do titular</p>
+                        <p  id="numero-cartao">Numero do cartão</p>
+                        <p  id="data-vencimento">Data vencimento</p>
+                        <p id="cvv">CVV</p>
+    
+                      </div>
+                    
+                    </div>
+
+                  
+
+                    <div class="d-flex flex-column justify-content-between">
+
+                      <div class="d-flex flex-column">
+                        <h3>
+                          Endereço
+                        </h3>
+                        <p class="endereco">
+                          Endereço
+                        </p>
+                        <p class="cidade-estado">
+                          Cidade estado
+                        </p>
+                        <p class="bairro">
+                          Bairro
+                        </p>
+                        <p class="cep">
+                          cep
+                        </p>
+                      </div>
+
+                      <div class="d-flex flex-column">
+                        <h3>
+                          Dados
+                        </h3>
+                        <p id="nome">
+                          Nome
+                        </p>
+                        <p id="cpf">
+                          CPF
+                        </p>
+                        <p id="rg">
+                          RG
+                        </p>
+                        <p id="telefone-2">
+                          Telefone
+                        </p>
+                      </div>
+                    </div>
+
+                
+
+
+                    
+
+
+
+
+                  </section>
+
+                </section>
+              </div>
+
+          
+            </div>
+
+            <div class="produtos__status d-flex gap-3">
+              <p id="subtotal"></p>
+              <p class="total-confirmar"></p>
+            </div>
+
+            <hr>
+     
+            <div class="btn__container" >
+
+              <button class="btn" id="cancelar-compra-btn">
+                Cancelar
+              </button>
+
+              <button class="btn" id="agendar-compra-btn">
+                Cofirmar 
+              </button>
+     
+            </div>
+
+
+          </article>
+
+      </section>
+
+
+    </main>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+
+    <script type = "module" src="./app/checkout/barraProgresso.js"></script>
+    <script type = "module" src="./app/checkout/controlarConfirmacao.js"></script>
+    <script>
+      document.querySelector("#date-now").textContent = new Date().toLocaleDateString();
+      document.querySelector("#random-date").textContent = `${Math.floor(Math.random()*10) + 1} Dias`
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+$compound-name : 'form__checkout__container';
+
+.#{$compound-name} {
+
+
+    height: 82vh;
+    position: relative;
+    z-index: 2;
+
+
+    h2 {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+        
+    }
+ 
+    &::before{
+
+        background: $white;
+        width: 100%;
+        content: '';
+        position: absolute;
+        height: 100%;
+        top: 40%;
+        clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+        z-index: -1;
+
+        
+       
+    }
+    
+    form {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2em;
+        color: $white;
+
+
+        .title__wrapper {
+            padding: .5rem;
+            text-transform: uppercase;
+
+            h2 {
+                font-weight: 300;
+                font-size: 30px;
+                
+            }
+
+            .line-wrapper {
+                width: 100%;
+                background-color: $fall;
+                height: 4px;
+            }
+        }
+
+
+        .form__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            padding-bottom: 1rem;
+            border-radius: 8px;
+            width: 80%;
+            height: 80vh;
+            background-color: $night;
+
+            .control__container {
+
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                padding: 1rem;
+                
+              
+            }
+        }
+
+        .dados__pagamento {
+
+            padding: 1rem;
+            gap: 2em;
+            border-radius: $radius-4-px;
+            
+
+            .form-control {
+                border-radius: 0;
+                
+            }
+
+         
+        }
+
+        .btn__container {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 0 1em;
+
+            button {
+                background-color: $fall;
+                color: $white;
+                padding: .5em;
+                width: 200px;
+                border-radius: 0;
+
+               
+            }
+
+            
+            a{
+                padding: .5em;
+                width: 200px;
+                border: 1px solid $white;
+                color: $white;
+                border-radius: 0;
+            }
+        }
+
+        }
+    
+
+
+}

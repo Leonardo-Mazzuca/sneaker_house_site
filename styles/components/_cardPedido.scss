@@ -1,0 +1,89 @@
+$component-name : 'card__pedido__container';
+
+.#{$component-name} {
+
+    padding: 2rem 3%;
+    margin-bottom: 1em;
+  
+
+    .card__pedido {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        background-color: lighten($smoke,11);
+        padding: 1em;
+        color: $white;
+        border-radius: $radius-4-px;
+        flex-direction: column;
+        margin: 2rem 0;
+        width: 100%;
+        
+
+        .itens__wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            overflow: scroll;
+            gap: .5em;
+        
+        .itens__container {
+            
+            display: flex;
+            padding: 1em;
+            flex-direction: column;
+            position: relative;
+            min-width: 300px;
+
+            .img__container {
+                background-color: $smoke;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px 4px 0 0;
+                
+                img {   
+                    width: 200px;
+                   
+                }
+            }
+
+            .tenis__card__body {
+                width: inherit;
+                background-color: $night;
+                color: $white;
+                padding: 1em;
+                border-radius: 0 0 4px 4px ;
+                font-weight: 300;
+
+                .preco {
+                    color: $fall;
+                }
+                
+            }
+
+        }
+
+
+        }   
+
+        .dados__pedido__container {
+            width: 100%;
+            padding: 0 1em;
+            color: $darkness;
+
+            p {
+
+                font-weight: 600;
+                font-size: 18px;
+                span {
+                    color: $fall;
+                    
+                }
+            }
+        }
+    }
+
+}

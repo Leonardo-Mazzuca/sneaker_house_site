@@ -1,0 +1,135 @@
+$component-name : "esqueceu__senha__form";
+
+.#{$component-name} {
+
+
+    padding: 2rem 9%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    .esqueceu__senha__wrapper {
+
+        padding: 1rem;
+        box-shadow: 1px 1px 3px $darkness;
+        border-radius: $radius-4-px;
+        width: 100%;
+        height: auto;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+
+            button {
+                width: 240px;
+                
+            }
+
+            .form__datas{
+                height: 100px;
+
+                .input-container {
+                    position: relative;
+                    margin: 1rem 0;
+
+                    
+                    &.disabled {
+                      color: $smoke;
+                      pointer-events: none;
+                      .form-control{
+                        border-color: $smoke;
+                  
+                      }
+                    }
+
+          
+                    .form-label {
+                      position: absolute;
+                      top: 5px;
+                      transition: opacity 0.3s ease;
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      justify-content: space-between;
+                      z-index: 1;
+
+                      i {
+                        font-size: $fs-high;
+                      }
+                      
+
+
+                    }
+          
+                    .form-control {
+          
+                      border: none;
+                      border-bottom: 1px solid $darkness;
+                      border-radius: 0;
+                      z-index: 2;
+
+                    }
+          
+                  }
+                  
+                  .input-container .form-label.filled {
+                    display: none;
+                 
+                    
+                    &:has(#icone-verificacao) {
+                      position: relative;
+                      display: flex;
+
+                      .form-label-text{
+                        display: none;
+                      }
+
+                    #icone-verificacao{
+                      position: absolute;
+                      right: 0;
+                      display: flex;
+                      top: 10px;
+                      font-size: $fs-high;
+
+
+                    }
+
+                  }
+
+                  &:has(.icone__verificar__senha__igual) {
+                    display: flex;
+
+                    .form-label-text{
+                      display: none;
+                    }
+
+                    .icone__verificar__senha__igual{
+                      position: absolute;
+                      right: 0;
+                      top: 4px;
+                      display: flex;
+                      font-size: $fs-high;
+                    }
+
+                  }
+
+                  }
+
+            }
+
+
+
+        
+
+   
+        }
+
+    }
+
+
+}

@@ -1,0 +1,101 @@
+$compound-name : 'novidades__container';
+
+.#{$compound-name} {
+    height: 100vh;
+    background: $darkness;
+    position: relative;
+    padding: 3rem 9%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    @include breakpoint (small-normal) {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+    &::before{
+
+        background: $white;
+        width: 100%;
+        content: '';
+        position: absolute;
+        height: 100%;
+        top: 50%;
+        clip-path: polygon(0% 50%, 100% 100%, 100% 0%);
+        z-index: -1;
+
+        
+       
+    }
+
+    .novidades__title{
+        align-self: flex-start;
+    }
+
+    h2{
+
+        color: $white;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font-family: 'IBM Plex Mono', monospace;
+        text-align: start;
+
+    }
+
+    p{
+
+        color: $white;
+        margin-top: 1rem;
+        font-size: $fs-default;
+        letter-spacing: 6px;
+        text-align: start;
+        font-weight: 300;
+        font-family: 'IBM Plex Mono', monospace;
+
+    }
+
+
+    .img__template__container{
+        width: 100%;
+
+        .img__template__super__card{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include breakpoint (small-normal) {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+    
+            p{
+                align-self: flex-start;
+                font-size: $fs-hiper;
+                text-transform: uppercase;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: 300;
+               
+            }
+            
+            img{
+                width: 700px;
+                margin-top: 2rem;
+                margin-left: 1rem;
+    
+                @include breakpoint (small-normal) {
+                    width: 100%;
+                }
+            }
+        }
+
+
+    }
+    
+}

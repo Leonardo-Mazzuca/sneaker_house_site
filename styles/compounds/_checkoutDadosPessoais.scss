@@ -1,0 +1,73 @@
+$compound-name : 'form__dados__pessoais__container';
+
+.#{$compound-name} {
+
+    padding: 2rem 9%;
+
+   
+    h2 {
+
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+
+        
+    }
+
+    .line-wrapper {
+        width: 100%;
+        background-color: $fall;
+        height: 4px;
+    }
+
+    form {
+        
+            .control__container {
+                margin-top: 2rem;
+                color: $white;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                    
+                .input-container {
+                    width: 100%;
+                }
+        
+                .form-control{
+                    border-radius: 0;
+                }
+            }
+            
+            .btn__container {
+
+                width: 100%;
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                button {
+                    background-color: $fall;
+                    color: $white;
+                    padding: .5em;
+                    width: 200px;
+                    border-radius: 0;
+    
+
+
+
+                }
+
+                a {
+                    padding: .5em;
+                    width: 200px;
+                    border: 1px solid $white;
+                    color: $white;
+                    border-radius: 0;
+                }
+
+
+            }
+
+    }
+ 
+}

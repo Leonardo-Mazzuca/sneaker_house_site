@@ -1,0 +1,253 @@
+$compound-name: "login__form";
+
+.#{$compound-name} {
+  background: $white;
+
+  .form__container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+    .bg__img__container {
+
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 100%;
+      padding: 0;
+      position: relative;
+        
+      .img__bg{
+        position: absolute;
+      }
+
+      a {
+        color: $black;
+        position: absolute;
+        padding: 0.5rem;
+        background-color: $white;
+        border-radius: $radius-50-percent;
+        font-size: $fs-high;
+        width: 50px;
+        text-align: center;
+        top: 40px;
+        left: 40px;
+      }
+
+      button {
+        background: rgba($white, 0.9);
+        height: 90px;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 800;
+        border-radius: 24px 0 0 24px;
+        border: none;
+        width: 200px;
+        margin: 3rem 0;
+        transition: $transition-fast;
+
+        &:hover {
+          background: rgba($white, 0.5);
+          transition: $transition-fast;
+        }
+
+        &.selected {
+          color: $strawberry;
+        }
+      }
+
+      @include breakpoint(medium-normal) {
+        height: 80vh;
+        background-size: cover;
+        width: 100%;
+        background-position: 10% 100%;
+        background-attachment: fixed;
+      }
+    }
+
+    .form__main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 90vh;
+      border-radius: 0 0 0px 100px;
+      box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.75);
+
+      svg {
+        margin-bottom: 3rem;
+      }
+
+
+      .form__dom {
+
+        .input-container {
+          position: relative;
+
+          .form-label {
+            position: absolute;
+            top: 5px;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            
+
+            i {
+              font-size: $fs-high;
+
+            }
+          }
+
+          .form-control {
+
+            border: none;
+            border-bottom: 1px solid $darkness;
+            border-radius: 0;
+          }
+
+        }
+
+        .input-container:focus-within .form-label {
+          display: none;
+        }
+
+
+        .input-container .form-label.filled {
+          display: none;
+          
+          &:has(#icone-verificacao) {
+            display: flex;
+            .l-text-create-pass{
+              display: none;
+            }
+            .fa-lock{
+              display: none;
+            }
+
+          #icone-verificacao  {
+            position: absolute;
+            right: 0;
+            display: flex;
+            top: 2px;
+
+
+          }
+
+        }
+        }
+
+        .btn__container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          margin-top: 3rem;
+
+          .esqueceu__senha__btn {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          button {
+            background: none;
+            border: none;
+            width: 150px;
+            text-align: center;
+            background: $darkness;
+            color: $white;
+            padding: 0.5rem;
+          }
+        }
+
+        .registrar__container {
+
+          display: grid;
+          grid-template-rows: 1fr min-content;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+          width: 100%;
+
+
+          .input-container {
+            &:last-child {
+              grid-column: 1 / -1; 
+            }
+          }
+          
+            
+            .form-label {
+
+                &:has(#icone-verificacao) {
+                    
+                    width: 100%;
+                    
+
+                  #icone-verificacao  {
+                    position: absolute;
+                    right: 0;
+
+                    
+
+                  }
+                }
+              }
+
+          
+        }
+        
+        .btn__container{
+
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+
+          
+          button {
+            width: 250px;
+            margin-top: 1rem;
+            border: none;
+            background: $darkness;
+            padding: 0.5rem;
+            color: $white;
+         
+            
+          }
+
+        }
+      }
+    }
+
+    .fazer__login__diferente {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+      padding: 0 9%;
+      margin-bottom: 0.5rem;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        .icon-img {
+          width: 15px;
+        }
+      }
+    }
+  }
+}

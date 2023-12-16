@@ -1,0 +1,128 @@
+.progressbar-wrapper {
+    background: $night;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .progressbar {
+        width: 100%;
+        counter-reset: step;
+        
+
+    
+    
+    
+        li {
+            list-style-type: none;
+            width: 25%;
+            float: left;
+            font-size: 12px;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            color: #7d7d7d;
+
+            &::before{
+                width: 40px;
+                height: 40px;
+                content: "";
+                line-height: 60px;
+                border: 2px solid #7d7d7d;
+                display: block;
+                text-align: center;
+                margin: 0 auto 3px auto;
+                border-radius: 50%;
+                position: relative;
+                z-index: 2;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &::after {
+                width: 100%;
+                height: 2px;
+                content: '';
+                position: absolute;
+                background-color: #7d7d7d;
+                top: 30px;
+                left: -50%;
+                z-index: 0;
+
+                &.complete {
+                    background-color: $money;
+                }
+            }
+
+            &:first-child::after{
+                content: none;
+            }
+
+            &.active {
+
+                color: $ocean;
+                font-weight: bold;  
+
+              
+                &::before {
+                    border-color: $ocean;
+                    content: '\f3c5';
+                    font-family: 'FontAwesome';
+                    font-size: 1.5em;
+                }
+        
+            }
+
+            
+            &.complete {
+
+                color: $money;
+                font-weight: bold;  
+
+        
+
+                &::before {
+
+                    content: '\f058'; 
+                    font-family: 'FontAwesome'; 
+                    border-color: $money;
+                    font-size: 2.2em;
+                    
+
+                }
+
+         
+
+        
+            }
+
+     
+
+    
+        }
+
+        li.active + li::after {
+
+            background-color: #7d7d7d;
+
+        }
+
+        li.complete + li::after {
+
+            background-color: $money;
+
+        }
+
+    }
+    
+    
+   
+    
+
+}
+

@@ -1,0 +1,137 @@
+
+
+$component-name: 'tenis__container';
+
+.#{$component-name}{
+
+    
+    background-color: $darkness;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1%;
+
+
+    .swiper {
+        width: 100%;
+        height: auto;
+
+        .swiper-pagination-bullet-active {
+            background-color: white; 
+          }
+          
+   
+          .swiper-pagination-bullet {
+            background-color: grey; 
+          }
+          
+
+          .swiper-pagination {
+            bottom: 10px; 
+            right: 50px;
+          }
+          
+          .swiper-pagination-bullet {
+            width: 8px; 
+            height: 8px;
+            margin: 0 4px;
+          }
+      }
+
+
+    #sl-tenis-container {
+
+ 
+
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1%;
+             
+        
+
+        
+
+        @include breakpoint (medium-normal)  {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+
+        .img__tenis{
+    
+            img{
+
+                width: 565px;
+
+            }
+    
+        }
+
+        .container__cards__tenis{
+
+            display: flex;
+            flex-direction: column;
+
+            @include breakpoint (small-only){
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+            
+
+
+            
+            h2{
+                color: $white;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: $fs-ultra;
+                
+
+            }
+
+            .cards__container__content{
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+ 
+
+                .card__tenis{
+                    background: $white;
+                    width: 130px;
+                    height: 20vh;
+                    border-radius: $radius-4-px;
+                    box-shadow: 1px 1px 12px rgba(255,255,255, .3);
+                  
+                }
+
+            }
+    
+            button{
+                
+                background: $white;
+                width: 250px;
+                padding: 1rem;
+                border: none;
+                margin-top: 2rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                
+            }
+
+        }
+    
+
+    }
+
+
+
+    
+
+
+}

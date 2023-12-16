@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;500;700&display=swap');
+
+$compound-name : 'produtcts__general__section';
+
+.#{$compound-name}{
+
+    display: flex;
+    background-color: $darkness;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include breakpoint (medium-normal) {
+        text-align: center;
+    }
+
+    
+    .filter__products{
+
+        height: auto;
+        padding: 2rem 5%;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+
+        @include breakpoint (medium-only) {
+
+            flex-direction: column;
+
+        }
+
+
+        button{
+            background: none;
+            border: none;
+        }
+        
+    
+        .filtrar__genero__container{
+
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-top: 1rem;
+       
+
+            button {
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                color: $white;
+                &.selected {
+                    color: $fall;
+                }
+            }
+
+            @include breakpoint (medium-normal) {
+                flex-direction: row;
+                font-size: 20px;
+            }
+
+        
+        
+        }
+
+        .elementos__busca{
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            
+       
+
+            @include breakpoint (medium-normal) {
+                flex-direction: row;
+                align-items: center;
+                font-size: 20px;
+            }
+        
+
+            button{
+
+                color: $white;
+
+                .tenis__card__marca{
+                    width: 20px;
+                    fill: $white;
+                }
+                
+                &:hover{
+                    color: $smoke;
+                }
+
+                svg ,i{
+                    margin-right: 0.4rem;
+                }
+            }
+
+       
+
+
+         
+        }
+        
+    }
+
+    .products__container__title{
+        color: $white;
+        text-transform: uppercase;
+        margin-left: 2rem;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+
+        @include breakpoint (small-normal) {
+            margin: 0 auto;
+        }
+
+       
+
+        span{
+
+            display: inline-block;
+            margin: 0 15px;
+            color: $smoke;
+            opacity: .3;
+
+            @include breakpoint (small-normal) {
+                display: none;
+            }
+
+
+        }
+
+     
+
+    }
+}

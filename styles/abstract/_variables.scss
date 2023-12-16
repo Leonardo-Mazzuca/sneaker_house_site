@@ -1,0 +1,111 @@
+//====================================== color variables ======================================
+
+
+
+$black : #000;
+$white: #fff; 
+$night: #272829;
+$trash: #61677A;
+$sad: #D8D9DA;
+$darkness: #181818;
+$fall: #ffbf00;
+$autum: #F94C10;
+$moon: #A7ADAD;
+$astra: #F5F5F5;
+$money:#1F8A70;
+$ocean: #0081C9;
+$sky: #82AAE3;
+$candy: #FF597B;
+$strawberry: #900C3F;
+$fiap: #df143c;
+$pastel: #EADBC8;
+$pastel-light: #f0ebe4;
+$pastel-ultra-light: #FFFAF4;
+$smoke : #dedede;
+$andromeda : #B931FC;
+$nightfall : #57375D;
+$tenisball : #D2DE32;
+$wind : #A0E9FF;
+$slime : #86A789;
+$cherry : #ED7B7B;
+$midnight : #0C356A;
+$downsea : #1D5B79;
+$moss : #005B41;
+
+//====================================== transitions ======================================
+
+$transition-default: .6s ease-in-out;
+$transition-fast: .3s ease-in-out;
+$transition-slow: 1s ease-in-out;
+
+// ====================================== width ======================================
+
+$width-35: 35%;
+$width-50: 50%;
+$width-75: 75%;
+$width-100: 100%;
+
+//====================================== radius ======================================
+
+$radius-4-px: 4px;
+$radius-8-px: 8px;
+$radius-12-px: 12px;
+$radius-20-px: 20px;
+$radius-50-percent: 50%;
+
+//====================================== font size ======================================
+
+$fs-default: 16px;
+$fs-minus: 14px;
+$fs-high: 22px;
+$fs-ultra: 34px;
+$fs-hiper: 56px;
+
+//====================================== font style ======================================
+
+$robot-font: 'Orbitron', sans-serif;
+$poppins-font : 'Poppins', sans-serif;
+$rubik-font : 'Rubik', sans-serif;
+
+//====================================== class ======================================
+
+.text-wind{color: $wind !important;}
+.text-fall{color: $fall !important;}
+.text-tenisball{color: $tenisball !important;}
+.text-money{color: $money !important;} 
+.text-candy{color: $candy !important;}
+.text-pastel{color: $pastel !important;}
+.text-slime{color: $slime !important;}
+.text-cherry{color: $cherry !important;}
+.text-midnight{color: $midnight !important;}
+.text-autum{color: $autum !important;};
+.text-downsea{color: $downsea !important;}
+.text-moss{color: $moss !important;}
+.text-black{color: $black !important;}
+.text-strawberry{color: $strawberry !important;}
+
+.fill-ocean{fill: $ocean;}
+.fill-fall{fill: $fall;}
+
+.bg-wind{background-color: $wind;}
+.bg-fall{background-color: $fall;}
+.bg-tenisball{background-color: $tenisball;}
+.bg-money{background-color: $money;}
+.bg-candy{background-color: $candy;}
+.bg-pastel{background-color: $pastel;}
+.bg-slime{background-color: $slime;}
+.bg-cherry{background-color: $cherry;}
+.bg-midnight{background-color: $midnight;}
+.bg-autum{background-color: $autum;}
+.bg-downsea{background-color: $downsea;}
+.bg-moss{background-color: $moss;}
+.bg-black{background-color: $black;}
+.bg-strawberry{background-color: $strawberry;}
+.bg-night{background-color: $night;}
+
+
+
+
+
+
+
